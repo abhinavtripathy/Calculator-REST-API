@@ -18,4 +18,18 @@ const init = async () => {
 
 }
 
+server.route({
+    method: 'GET',
+    path: '/calculator/about',
+    handler: function (request, h) {
+
+        var data = {
+            message: 'Welcome to our Calculator Service'
+        };
+
+        return data;
+    }
+});
+
+
 init();
